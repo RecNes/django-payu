@@ -22,14 +22,14 @@ for dirpath, dirnames, filenames in os.walk(PROJECT_NAME):
 
 setup(
     name='django-payu',
-    version='0.5',
+    version='0.6',
     packages=['payu', 'payu.migrations'],
     include_package_data=True,
     description='A simple PayU app for Django.',
     long_description=README,
-    url='https://github.com/MicroPyramid/django-payu',
-    author='Ashwin Kumar',
-    author_email='ashwin@micropyramid.com',
+    url='https://github.com/RecNEs/django-payu',
+    author='Sencer Hamarat',
+    author_email='sencerhamarat@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -41,10 +41,13 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        'django>=1.7,<=2.0.8',
+        'django>=1.7,<=3.1',
     ],
 )
